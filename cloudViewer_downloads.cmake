@@ -1,13 +1,14 @@
 include(ExternalProject)
 
-set(DOWNLOAD_DIR "${CMAKE_CURRENT_LIST_DIR}")
+set(SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/cloudViewer_downloads")
 
 ExternalProject_Add(
     ext_cloudViewer_downloads
     PREFIX cloudViewer_downloads
-    URL https://github.com/Asher-1/cloudViewer_downloads.git
-    URL_HASH SHA256=2f5f2b789edb00260aa71f03189da5f21cf4b5617c4fbba709e9fbcfc76a2f1e
-    DOWNLOAD_DIR "${DOWNLOAD_DIR}"
+    URL https://github.com/Asher-1/cloudViewer_downloads/archive/refs/tags/1.0.0.tar.gz
+    URL_HASH SHA256=de306a156dbb1ba33493c5f0394fec088d668934c6815a317d1ddfe4f93dbf89
+    DOWNLOAD_DIR "${CLOUDVIEWER_THIRD_PARTY_DOWNLOAD_DIR}/cloudViewer_downloads"
+    SOURCE_DIR "${SOURCE_DIR}"
     UPDATE_COMMAND ""
     CONFIGURE_COMMAND ""
     BUILD_COMMAND ""
