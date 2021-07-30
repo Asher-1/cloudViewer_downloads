@@ -6,7 +6,7 @@ ExternalProject_Add(
     ext_cloudViewer_downloads
     PREFIX cloudViewer_downloads
     URL https://github.com/Asher-1/cloudViewer_downloads/archive/refs/tags/1.1.0.tar.gz
-    URL_HASH SHA256=92eb68550d5fa114e18ccd42c40e0176ddd1a044ad7cd89c05602bfbfa014a41
+    URL_HASH SHA256=ab515bd4c4a3b705fd2e40d106ac63ec83828ef885bb041566fdbb67e49dc8ba
     DOWNLOAD_DIR "${CLOUDVIEWER_THIRD_PARTY_DOWNLOAD_DIR}/cloudViewer_downloads"
     SOURCE_DIR "${SOURCE_DIR}"
     UPDATE_COMMAND ""
